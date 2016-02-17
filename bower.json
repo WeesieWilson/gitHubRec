@@ -1,0 +1,19 @@
+{
+  "name": "gitHubRec",
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "underscore": "^1.8.3",
+    "jQuery": "^2.2.0"
+  }
+}
