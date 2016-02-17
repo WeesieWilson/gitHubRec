@@ -1,0 +1,47 @@
+
+nav{
+  font-family: 'octicons';
+  background-color: #F5F5F5;
+  border-bottom: #E5E5E5 solid 1px;
+    .wrapper{
+      margin: 0 auto;
+      width: 80%;
+      display: flex;
+      flex-flow: row;
+      justify-content: flex-start;
+      align-items: center;
+      .logo{
+        width: 5%;
+        }
+        input{
+          width: 30%;
+          height: 20px;
+        }
+        ul{
+          width: 20%;
+          li{
+            display: inline-block;
+            padding-right: 2%;
+            font-size: 13px;
+            font-weight: bold;
+            }
+          }
+          .createNew{
+            margin-left: 25%;
+          }
+          .navProfile{
+            display: flex;
+            justify-content: flex-end;
+            width: 12%;
+            .profileHolderNav{
+              // border: 1px solid black;
+              width: 30%;
+              display: inline-block;
+              margin-right: 5%;
+            }
+            span{
+              align-self: center;
+            }
+          }
+        }
+}

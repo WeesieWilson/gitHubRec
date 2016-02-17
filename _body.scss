@@ -1,0 +1,19 @@
+.wrapperBody{
+  font-family: 'octicons';
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 2%;
+    aside{
+      display: flex;
+      flex-flow: column;
+      .profileHolder{
+        p{
+          font-size: 20px;
+          color: #6C6C6C;
+        }
+
+      }
+
+    }
+}
