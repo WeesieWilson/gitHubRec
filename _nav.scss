@@ -25,22 +25,24 @@ nav{
             font-weight: bold;
             }
           }
-          .createNew{
-            display: flex;
-          }
-          .navProfile{
-            display: flex;
-            justify-content: flex-end;
-            span{
-              order: 2;
-              align-self: center;
-            }
-            img{
-              order: 1;
-              width: 5%;
-              height: 20px;
-              padding-right: 1%;
-            }
-          }
-        }
+
+      }
+}
+
+.navLast{
+  flex: 2;
+  display: flex;
+  justify-content: flex-end;
+    .createNew{
+      flex: 0;
+      display: flex;
+      padding-right: 2%;
+    }
+    .navProfile{
+      flex: 0;
+      display: flex;
+      img{
+        height: 20px;
+      }
+    }
 }

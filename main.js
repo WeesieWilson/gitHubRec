@@ -1,19 +1,66 @@
+$(document).ready(function(){
+
+var profilePicture = "<img src='" + userProfile.avatar_url +"' />";
+
+$('.navProfile').prepend(profilePicture);
 
 
-$('.navProfile').append("<img src='" + userProfile.avatar_url +"' />");
-$('.navProfile').children('img').css('border-radius', '20%');
-
-$('.profileHolder').append("<img src='" + userProfile.avatar_url +"' />");
+$('.profileHolder').prepend(profilePicture);
 
 
 $('.profileHolder').append("<p>" + userProfile.login +  "</p>" + "<p class='joined'>" + '<span class="octicon octicon-history">' + '</span>' + " " + "Joined on Jan 29, 2016" + "</p>");
 
 
 
-$('.followersContainer').append("<h3>" + userProfile.followers + "<p>" + "Followers" + "</p>" + "</h3>" + "<h3>" + userProfile.following + "<p>" + "Starred" + "</p>" + "</h3>" + '<h3>' + "0" + "<p>" + "Following" + "</p>" +  "</h3>" );
+$('.followersContainer').append("<h3>"
++ userProfile.followers
++ "<p>"
++ "Followers"
++ "</p>"
++ "</h3>"
++ "<h3>"
++ userProfile.following
++ "<p>"
++ "Starred"
++ "</p>"
++ "</h3>"
++ '<h3>'
++ "0"
++ "<p>"
++ "Following"
++ "</p>"
++  "</h3>" );
+
+var sectionNavItems = $('.sectionNav').find('a');
+
+sectionNavItems.click(function(event){
+  event.preventDefault();
+  var selectedPage = '.' + $(this).attr('rel');
+  $(selectedPage).siblings('div').addClass('inactive');
+  $(selectedPage).removeClass('inactive');
+
+});
+
+sectionNavItems.click(function(event){
+  event.preventDefault();
+  $(this).siblings('a').removeClass('active');
+  $(this).addClass('active');
+})
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+});
 
 
 
