@@ -1,12 +1,16 @@
-$('.profileHolderNav').append("<img src='" + userProfile.avatar_url +"' />");
-$('.profileHolderNav').children('img').css('width','70%').css('border-radius', '20%');
+
+
+$('.navProfile').append("<img src='" + userProfile.avatar_url +"' />");
+$('.navProfile').children('img').css('border-radius', '20%');
 
 $('.profileHolder').append("<img src='" + userProfile.avatar_url +"' />");
-$('.profileHolder').children('img').css('width','54%').css('border-radius', '6%');
-
-$('.profileHolder').append("<p>" + userProfile.login +  "</p>");
 
 
+$('.profileHolder').append("<p>" + userProfile.login +  "</p>" + "<p class='joined'>" + '<span class="octicon octicon-history">' + '</span>' + " " + "Joined on Jan 29, 2016" + "</p>");
+
+
+
+$('.followersContainer').append("<h3>" + userProfile.followers + "<p>" + "Followers" + "</p>" + "</h3>" + "<h3>" + userProfile.following + "<p>" + "Starred" + "</p>" + "</h3>" + '<h3>' + "0" + "<p>" + "Following" + "</p>" +  "</h3>" );
 
 
 

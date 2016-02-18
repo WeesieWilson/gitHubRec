@@ -5,10 +5,9 @@ nav{
   border-bottom: #E5E5E5 solid 1px;
     .wrapper{
       margin: 0 auto;
+      margin-top:  -1%;
       width: 80%;
       display: flex;
-      flex-flow: row;
-      justify-content: flex-start;
       align-items: center;
       .logo{
         width: 5%;
@@ -27,20 +26,20 @@ nav{
             }
           }
           .createNew{
-            margin-left: 25%;
+            display: flex;
           }
           .navProfile{
             display: flex;
             justify-content: flex-end;
-            width: 12%;
-            .profileHolderNav{
-              // border: 1px solid black;
-              width: 30%;
-              display: inline-block;
-              margin-right: 5%;
-            }
             span{
+              order: 2;
               align-self: center;
+            }
+            img{
+              order: 1;
+              width: 5%;
+              height: 20px;
+              padding-right: 1%;
             }
           }
         }

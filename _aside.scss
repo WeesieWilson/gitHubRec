@@ -1,0 +1,65 @@
+.wrapperBody{
+  font-family: 'octicons';
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 2%;
+    aside{
+      flex: 1;
+      display: flex;
+      flex-flow: column;
+      .profileHolder{
+        display: flex;
+        flex-flow: column;
+        img{
+          width: 230px;
+          height: 230px;
+          border-radius: 2%;
+        }
+        p{
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 24px;
+          color: #666;
+        }
+        .joined{
+          border-top: 1px #e5e5e5 solid;
+          padding-top: 3%;
+          width: 85%;
+          margin-top: -1%;
+          font-size: 13px;
+          color: #333;
+
+      }
+    }
+    .followersContainer{
+      display: flex;
+      flex-flow: row;
+      justify-content: space-around;
+      width: 85%;
+      border-top: 1px #e5e5e5 solid;
+      h3{
+        color: #4078C0;
+        font-weight: bold;
+        font-size: 25px;
+        p{
+          font-size: 11px;
+          margin: 0 auto;
+          margin-left: -36%;
+          color: #787878;
+          font-weight: 100;
+          &:hover {
+              color: #4078C0;
+            }
+        }
+
+      }
+    }
+
+}
+section{
+  flex: 3;
+  background-color: grey;
+}
+}

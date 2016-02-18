@@ -4,10 +4,9 @@ nav {
   border-bottom: #E5E5E5 solid 1px; }
   nav .wrapper {
     margin: 0 auto;
+    margin-top: -1%;
     width: 80%;
     display: flex;
-    flex-flow: row;
-    justify-content: flex-start;
     align-items: center; }
     nav .wrapper .logo {
       width: 5%; }
@@ -22,17 +21,18 @@ nav {
         font-size: 13px;
         font-weight: bold; }
     nav .wrapper .createNew {
-      margin-left: 25%; }
+      display: flex; }
     nav .wrapper .navProfile {
       display: flex;
-      justify-content: flex-end;
-      width: 12%; }
-      nav .wrapper .navProfile .profileHolderNav {
-        width: 30%;
-        display: inline-block;
-        margin-right: 5%; }
+      justify-content: flex-end; }
       nav .wrapper .navProfile span {
+        order: 2;
         align-self: center; }
+      nav .wrapper .navProfile img {
+        order: 1;
+        width: 5%;
+        height: 20px;
+        padding-right: 1%; }
 
 .wrapperBody {
   font-family: 'octicons';
@@ -41,8 +41,47 @@ nav {
   width: 80%;
   margin-top: 2%; }
   .wrapperBody aside {
+    flex: 1;
     display: flex;
     flex-flow: column; }
-    .wrapperBody aside .profileHolder p {
-      font-size: 20px;
-      color: #6C6C6C; }
+    .wrapperBody aside .profileHolder {
+      display: flex;
+      flex-flow: column; }
+      .wrapperBody aside .profileHolder img {
+        width: 230px;
+        height: 230px;
+        border-radius: 2%; }
+      .wrapperBody aside .profileHolder p {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 24px;
+        color: #666; }
+      .wrapperBody aside .profileHolder .joined {
+        border-top: 1px #e5e5e5 solid;
+        padding-top: 3%;
+        width: 85%;
+        margin-top: -1%;
+        font-size: 13px;
+        color: #333; }
+    .wrapperBody aside .followersContainer {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-around;
+      width: 85%;
+      border-top: 1px #e5e5e5 solid; }
+      .wrapperBody aside .followersContainer h3 {
+        color: #4078C0;
+        font-weight: bold;
+        font-size: 25px; }
+        .wrapperBody aside .followersContainer h3 p {
+          font-size: 11px;
+          margin: 0 auto;
+          margin-left: -36%;
+          color: #787878;
+          font-weight: 100; }
+          .wrapperBody aside .followersContainer h3 p:hover {
+            color: #4078C0; }
+  .wrapperBody section {
+    flex: 3;
+    background-color: grey; }
