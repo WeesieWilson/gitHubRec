@@ -89,16 +89,8 @@ nav {
 .inactive {
   display: none; }
 
-.repos {
-  background-color: lightblue;
-  height: 300px; }
-
 .contributions {
   background-color: lightyellow;
-  height: 300px; }
-
-.activity {
-  background-color: lightpink;
   height: 300px; }
 
 .sectionNav {
@@ -120,3 +112,70 @@ nav {
   border-top: 1px #DDD solid;
   border-left: 1px #DDD solid;
   border-right: 1px solid #DDD; }
+
+.repos .findRepos {
+  border-bottom: 1px solid #DDD;
+  display: flex; }
+  .repos .findRepos .inputs {
+    flex: 1;
+    display: flex;
+    align-items: center; }
+    .repos .findRepos .inputs input[type='text'] {
+      width: 75%;
+      padding: 3%;
+      font-size: 13px;
+      color: #333;
+      border: 1px solid #ccc;
+      border-radius: 3px; }
+    .repos .findRepos .inputs input[type="submit"] {
+      margin-left: 8px;
+      background-color: #eee;
+      border: 1px solid #d5d5d5;
+      font-size: 13px;
+      font-weight: bold;
+      line-height: 20px;
+      border-radius: 4px; }
+  .repos .findRepos ul {
+    flex: 2;
+    display: flex; }
+    .repos .findRepos ul li {
+      flex: 1;
+      list-style: none;
+      color: #4078c0;
+      font-size: 14px;
+      margin-right: 3%; }
+      .repos .findRepos ul li:hover {
+        text-decoration: underline;
+        cursor: pointer; }
+    .repos .findRepos ul a {
+      padding: 8%;
+      text-decoration: none;
+      color: #fff;
+      background-color: #60b044;
+      background-image: -webkit-linear-gradient(#8add6d, #60b044);
+      background-image: -o-linear-gradient(#8add6d, #60b044);
+      background-image: linear-gradient(#8add6d, #60b044);
+      border-color: #5ca941;
+      border-radius: 3px;
+      border: 1px solid #5ca941; }
+      .repos .findRepos ul a span {
+        padding-right: 7%; }
+
+.activity h2 {
+  font-size: 12px;
+  color: #bbb; }
+
+.activity p {
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block; }
+
+.activity img {
+  height: 20px;
+  display: inline-block; }
+
+.pushEvent {
+  border-bottom: 1px solid #DDD; }
+
+.blue {
+  color: #4078c0; }

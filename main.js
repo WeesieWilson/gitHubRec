@@ -1,4 +1,4 @@
-$(document).ready(function(){
+
 
 var profilePicture = "<img src='" + userProfile.avatar_url +"' />";
 
@@ -49,18 +49,67 @@ sectionNavItems.click(function(event){
 
 
 
+filteredArray = activityArray.filter(function(el){return el.type === "PushEvent";});
 
-
-
-
-
-
-
-
-
-
-
+var emptyPush = "";
+var pushArray = filteredArray.forEach(function(el){
+  if (el.payload.commits){
+    var commitMessage = el.payload.commits[0].message;
+  }
+  else{
+    commitMessage = " ";
+  };
+  emptyPush +=
+  '<div class="pushEvent">'
+  + "<h2>"
+  + el.created_at
+  + "</h2>"
+  + "<p>"
+  + "<span class='blue'>"
+  + el.actor.login
+  + "</span>"
+  + "pushed to"
+  + "<span class='blue'>"
+  + "master"
+  + "</span>"
+  + "at"
+  + "<span class='blue'>"
+  + el.repo.name
+  + "</span>"
+  + "</p>"
+  + "<br>"
+  + "<img src='"
+  + el.actor.avatar_url
+  +"'/>"
+  + '<span class="octicon octicon-mark-github">'
+  + '</span>'
+  + " "
+  + "<p>"
+  + el.payload.head.slice(0,7)
+  + " "
+  + "<p>"
+  + " "
+  + commitMessage
+  + "</p>"
+  + '</div>'
 });
+
+$(".activity").html(emptyPush).text();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
